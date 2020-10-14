@@ -24,5 +24,5 @@ First, Suspense should be declare in a Parent component, with a #default templat
 It will take the child component that is referred in the #default template, and, while all promises in it are pending, we will display the #fallback template. After all the promises are resolved, Vue will switch reactively to display the content of the #default template.
 
 ### Error catcher
-In the parent component, there is an error catcher using the new hook `onErrorCaptured` and a reactive variable. With a simple `v-if/v-else`, we check if we need to display the error message if an error is thrown everywhere in the app, or the Suspense component if we don't have any error.
+In the parent component, there is an error catcher that uses the new hook `onErrorCaptured` and a reactive variable. With a simple `v-if/v-else`, we check if we need to display the error message if an error is thrown everywhere in the app, or the Suspense component if we don't have any error.
 You can simply copy/paste it, and it's the best practice for now ! 
